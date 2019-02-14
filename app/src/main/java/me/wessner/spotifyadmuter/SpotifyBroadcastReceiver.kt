@@ -23,7 +23,7 @@ class SpotifyBroadcastReceiver : BroadcastReceiver() {
             val artistName = intent.getStringExtra("artist")
             val albumName = intent.getStringExtra("album")
             val trackName = intent.getStringExtra("track")
-            Toast.makeText(context, "Current track: " + trackName, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Current track: $trackName", Toast.LENGTH_SHORT).show()
         }
     }
 }
